@@ -1,0 +1,44 @@
+* {
+  font-family: sans-serif;
+}
+
+.result {
+  background-color: lightgrey;
+  margin: 15px;
+  padding: 25px;
+  clear: both;
+  height: 100px;
+}
+.img {
+  float: left;
+  display: inline-block;
+}
+.hidden {
+  display: none;
+}
+.small-img {
+  float: left;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.name {
+  margin: 3px;
+  float: inherit;
+  font-size: 2em;
+}
+.rating {
+  clear: both;
+  margin: 3px;
+}
+.info {
+  float: inherit;
+  margin: 0px 10px 0px 10px;
+  float: left;
+  display: inline-block;
+}
+.address {
+  margin: 3px;
+  float: inherit;
+  font-size: 1em;
+}

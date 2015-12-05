@@ -1,0 +1,27 @@
+html
+  head
+    title Sir Lunchalot
+    link(rel='stylesheet', href='/css/main.css')
+  body
+    h1 Find local lunch spots
+    form(name="search-yelp", method="post", action="/searchYelp")
+       div.input
+           span.label City
+           input(type="text", name="city")
+           span.label Search term
+           input(type="text", name="searchTerm")
+       div.actions
+           input(type="submit")
+    h1 Saved spots
+    .results
+      each val in results
+        .result
+          img(class="img" src= val.image_url)
+          .info
+            h1(class="name")= val.name
+            .rating
+              - var n = 0
+              while n < parseInt(Math.floor(val.rating))
+                span(class="hidden")= n++
+                img(class="small-img" src= "/images/star.png")
+            h2(class="address")=val.display_address
